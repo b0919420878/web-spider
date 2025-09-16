@@ -2,7 +2,7 @@
 
 A comprehensive Python-based financial data collection system that automatically downloads and processes Taiwan stock market data and international financial indicators.
 
-## 📋 Overview
+##  Overview
 
 This project consists of four main scripts that collect different types of financial data:
 
@@ -11,9 +11,9 @@ This project consists of four main scripts that collect different types of finan
 3. **Institutional Trading Data** - Foreign investors, investment trusts, and proprietary trading data
 4. **Margin Trading Data** - Margin financing and securities lending information
 
-## ✨ Features
+##  Features
 
-### 🌍 International Data Collection (`worldindex-today.py`)
+###  International Data Collection (`worldindex-today.py`)
 - **Bond Yields**: 10-year and 1-year treasury yields
 - **Currency Exchange Rates**: USD/TWD, USD/HKD, USD/CNY, USD/KRW, USD/JPY
 - **Stock Indices**: Dow Jones, NASDAQ, Hang Seng, Nikkei, Shanghai Composite, KOSPI
@@ -21,27 +21,27 @@ This project consists of four main scripts that collect different types of finan
 - **Data Source**: Yahoo Finance API
 - **Output**: CSV and TXT format files
 
-### 🏢 Taiwan Stock Market Data (`上櫃+上市+5秒.py`)
+###  Taiwan Stock Market Data (`上櫃+上市+5秒.py`)
 - **Listed Companies**: Taiwan Stock Exchange (TWSE) daily quotes
 - **OTC Companies**: Taipei Exchange (TPEx) daily quotes  
 - **Market Index**: 5-second interval TAIEX data (9:03:00 - 13:30:00)
 - **Data Points**: Open, High, Low, Close, Volume
 - **Output**: Individual TXT files for each stock (by stock code)
 
-### 👥 Institutional Trading Data (`上櫃+上市+大盤法人.py`)
+###  Institutional Trading Data (`上櫃+上市+大盤法人.py`)
 - **Foreign Investors**: Buy/sell volumes
 - **Investment Trusts**: Buy/sell volumes
 - **Proprietary Trading**: Buy/sell volumes
 - **Coverage**: Individual stocks and market-wide data
 - **Output**: LAW files with institutional trading records
 
-### 💰 Margin Trading Data (`上櫃+上市融資.py`)
+###  Margin Trading Data (`上櫃+上市融資.py`)
 - **Margin Financing**: Buy, sell, and outstanding balances
 - **Securities Lending**: Buy, sell, and outstanding balances
 - **Coverage**: Individual stocks and market aggregates
 - **Output**: INV files with margin trading records
 
-## 🛠 Requirements
+##  Requirements
 
 ### Python Dependencies
 ```bash
@@ -53,7 +53,7 @@ pip install pandas yfinance requests urllib3
 - Stable internet connection
 - Sufficient storage space for daily data files
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 financial-data-scraper/
@@ -84,7 +84,7 @@ financial-data-scraper/
         └── [stock_code].inv     # Individual stocks
 ```
 
-## 🚀 Usage
+##  Usage
 
 ### 1. International Financial Data
 ```bash
@@ -118,7 +118,7 @@ python 上櫃+上市融資.py
 - Includes market-wide aggregates
 - Outputs to INV format files
 
-## 📊 Data Format
+##  Data Format
 
 ### Stock Price Data (TXT files)
 ```
@@ -140,7 +140,7 @@ python 上櫃+上市融資.py
 "1140707","1000","800","5000","200","150","300"
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Output Directories
 - **Stock Data**: `D:/stock/txt/`
@@ -171,7 +171,7 @@ python 上櫃+上市融資.py
 | 100o | Crude Oil Futures |
 | 10sb | Soybean Futures |
 
-## ⚠️ Important Notes
+##  Important Notes
 
 ### Data Sources
 - **International Data**: Yahoo Finance (rate-limited)
@@ -192,7 +192,7 @@ python 上櫃+上市融資.py
 - Automatic retry mechanisms
 - Fallback encoding support for CSV files
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -219,7 +219,7 @@ Ensure write permissions for:
 - Current directory (for date folders)
 - `D:/stock/` directory and subdirectories
 
-## 📈 Data Analysis
+##  Data Analysis
 
 The collected data can be used for:
 - Technical analysis and backtesting
@@ -228,7 +228,7 @@ The collected data can be used for:
 - Cross-market correlation studies
 - Automated trading system development
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -236,11 +236,11 @@ The collected data can be used for:
 4. Test with different market conditions
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is provided as-is for educational and research purposes. Please ensure compliance with data provider terms of service.
 
-## ⚡ Quick Start
+##  Quick Start
 
 1. Install dependencies: `pip install pandas yfinance requests urllib3`
 2. Create output directories: `mkdir -p D:/stock/{txt,law,inv}`
